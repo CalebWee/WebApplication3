@@ -1,0 +1,33 @@
+﻿@page
+@model WebApplication3.Pages.Account.VerificationOtpModel
+@{
+}
+<div class="container mt-5">
+
+	<div class="row justify-content-center align-items-center">
+
+		<div class="col-sm-12 col-md-12 col-lg-4">
+			<h1 class="mb-3">Email Verification </h1>
+
+			<form method="post">
+				<div asp-validation-summary="All" class="text-danger"></div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="VModel.Email">Email</label>
+					<input type="email" min="1" max="30" asp-for="VModel.Email" class="form-control" />
+					<span asp-validaton-for="VModel.Email" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="VModel.OTP">OTP</label>
+					<input type="Text" asp-for="VModel.OTP" class="form-control" />
+					<span asp-validaton-for="RModel.LastName" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<button type="submit" class="btn btn-primary">Register</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

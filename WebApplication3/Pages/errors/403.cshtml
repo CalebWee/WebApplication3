@@ -1,0 +1,63 @@
+﻿@page
+@model WebApplication3.Pages.errors._403Model
+@{
+}
+<style>
+    .button-34 {
+        background: #000000;
+        border-radius: 999px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 70px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 0;
+        display: inline;
+    }
+
+    .Error404 {
+        text-align: center;
+        border: solid black 2px;
+        color: #888;
+        width: 55%;
+        margin: auto;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+        background: white;
+    }
+
+    .text404 {
+        padding: 50px;
+    }
+
+    #linkText {
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #54b3d6;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+
+        #linkText:hover {
+            box-shadow: inset 100px 0 0 0 #54b3d6;
+            color: white;
+        }
+</style>
+<div class="Error404">
+    <img style="width: 50%;" src="https://t4.ftcdn.net/jpg/04/58/82/67/240_F_458826713_A4riopipoeEoFk4PwgTypQHRmARZoEpy.jpg" />
+    <div class="text404">
+        <p style="font-size: 50px; ">OOPS! You dont belong here.</p>
+        <p>The page you are looking for is restricted for users.</p>
+        <p>Return to</p>
+        <a href="/account/login" class="button-34" style="text-decoration:none;">LOGIN</a>
+    </div>
+</div>

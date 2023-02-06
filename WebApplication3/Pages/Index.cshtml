@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@using Microsoft.AspNetCore.Http;
+
+<div class="text-center">
+    <h1 class="display-4">Welcome back, @Model.MyUser.FirstName @Model.MyUser.LastName </h1>
+    <p>Gender: @Model.MyUser.Gender</p>
+    <p>NRIC: @Model.MyUser.NRIC</p>
+    <p>Email: @Model.MyUser.Email</p>
+    <p>Date of Birth: @Model.BirthDate</p>
+    <p>Resume: @Model.MyUser.Resume</p>
+    <p>Who am I: @Model.MyUser.WhoamI</p>
+</div>
